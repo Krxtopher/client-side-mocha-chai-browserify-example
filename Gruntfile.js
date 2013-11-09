@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
     browserify: {
       test: {
-        src: ['src/scripts/**/*.js', 'test/specs/**/*Spec.js'],
+        src: ['test/specs/*.js'],
         dest: 'test/test.bundle.js',
         options: {
           debug: true    // This generates a source map to aid debugging in-browser.
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 
     watch: {
       javascript: {
-        files: ['src/scripts/**/*.js', 'test/specs/**/*Spec.js'],
+        files: ['src/scripts/**/*.js', 'test/specs/*.js'],
         tasks: ['compile-tests']
       },
       testrunner: {
@@ -42,7 +42,8 @@ module.exports = function(grunt) {
     }
   });
 
-  // Load required npm tasks.
+
+  // Load required external tasks.
 
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -58,7 +59,7 @@ module.exports = function(grunt) {
   grunt.registerTask('test',
     'Executes unit tests once.', ['compile-tests', 'open:testrunner']);
 
-  grunt.registerTask('test:ci',
+  grunt.registerTask('test:live',
     'Executes unit tests whenever a JS file or spec files is edited.', ['test', 'watch']);
 
   grunt.registerTask('default',
