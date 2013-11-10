@@ -1,0 +1,14 @@
+body {
+	font-family: Helvectica;
+	color: #333;
+	font-size: 14px;
+}
+
+#message {
+	font-family: Consolas, Menlo, monospace;
+	margin: 3em;
+	padding: 2em;
+	background-color: #fafafa;
+	border: 1px solid #eaeaea;
+	border-radius: 4px;
+}

@@ -13,35 +13,5 @@ module.exports = {
 		}
 
 		return sum / values.length;
-	},
-
-	median: function(values) {
-
-		var isOddQuantity,
-			sortedValues,
-			midIndex,
-			leftMidValue,
-			rightMidValue;
-
-		isOddQuantity = values.length % 2 == 1;
-		sortedValues = values.sort(compareNumericAscending);
-		midIndex = Math.floor(sortedValues.length / 2);
-
-		if (isOddQuantity) {
-
-			return sortedValues[midIndex];
-
-		} else {
-
-			leftMidValue = sortedValues[midIndex - 1];
-			rightMidValue = sortedValues[midIndex];
-
-			return (leftMidValue + rightMidValue) / 2;
-
-		}
 	}
 };
-
-function compareNumericAscending(a, b) {
-	return a - b;
-}
