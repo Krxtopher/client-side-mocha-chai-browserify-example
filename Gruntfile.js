@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         path: 'test/index.html'
       },
 
-      build: {
+      preview: {
         path: 'src/index.html'
       }
     }
@@ -83,8 +83,8 @@ module.exports = function(grunt) {
   grunt.registerTask('test:live',
     'Executes unit tests whenever an app JavaScript file or spec file is edited.', ['test', 'watch']);
 
-  grunt.registerTask('build',
-    'Compiles the JavaScript files.', ['browserify:build']);
+  grunt.registerTask('preview',
+    'Compiles the JavaScript files for preview and launches the index.html page.', ['browserify:build', 'open:preview']);
 
   grunt.registerTask('default',
     'The default task which is the same as "grunt test".', ['test']);
