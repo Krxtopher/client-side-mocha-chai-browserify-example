@@ -21,6 +21,6 @@ The build script includes a number of Grunt tasks you can try out.
 
 Running `grunt test` will compile and run the unit tests in Chrome.
 
-Running `grunt test:live` is similar to the `test` task but will continue watching for edits to the JavaScript or unit test files and automatically compile and run the tests when it detects a change. This is a great way to get constant, immediate feedback as you write your code. To see for yourself, run this task and then try making some breaking edits to either `src/scripts/statistics-utils.js` or `test/specs/statistics-utils.spec.js` while you keep the browser open.
+Running `grunt test:live` is similar to the `test` task but will continue watching for edits to the JavaScript or unit test files and automatically compile and run the tests when a change is detected. This is a great way to get constant, immediate feedback as you write your code. To see for yourself, run this task and then try making some breaking edits to either `src/scripts/statistics-utils.js` or `test/specs/statistics-utils.spec.js` while you keep the browser open.
 
 Running `grunt build` will compile and concatenate the JavaScript files for deployment and immediately load the project's index.html page in Chrome.
