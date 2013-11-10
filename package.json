@@ -1,10 +1,9 @@
 {
-  "name": "mocha-chai-client-starter",
+  "name": "client-side-mocha-chai-browserify-example",
   "version": "0.1.0",
-  "description": "Starter kit that provides scaffolding for a basic web front end project supporting Mocha unit tests with Chai matchers.",
+  "description": "An example demonstrating a client-side TDD/BDD workflow using Mocha, Chai, Browserify, and Grunt.",
   "main": "",
   "directories": {
-    "test": "test"
   },
   "dependencies": {},
   "devDependencies": {
