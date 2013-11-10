@@ -11,7 +11,7 @@ This example is intentionally simple so as to be clear. It by no means provides 
 
 Assuming you've already installed [Node](http://nodejs.org/), follow these steps to install the project:
 
-1. Clone this repository or [download the ZIP]().
+1. Clone this repository or [download the ZIP](https://github.com/Krxtopher/client-side-mocha-chai-browserify-example/archive/master.zip).
 2. From a command prompt navigate to the root of the repository.
 3. Run `npm install` to automatically install the project's dependencies.
 
