@@ -1,6 +1,6 @@
 This example demonstrates one way to scaffold out a browser-based JavaScript project that supports test-driven/behavior-driven development (TDD/BDD) using the following:
 
-+ [**Mocha**](http://visionmedia.github.io/mocha/) as the unit testing framework
++ [**Mocha**](http://mochajs.org/) as the unit testing framework
 + [**Chai**](http://chaijs.com/) as the assertion library
 + [**Browserify**](http://browserify.org/) for module definition and JavaScript concatenation
 + [**Grunt**](http://gruntjs.com/) to automate testing and builds
